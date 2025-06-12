@@ -1,0 +1,13 @@
+<div class="movies-container">
+  <p class="stars">★★★★★</p>
+  <h1>Filmes disponíveis:</h1>
+  <div class="movies-list">
+    {{#each movies}}
+      <div>
+        #{{this.id}} - <span class="bold"><a href="/movies/{{this.id}}">{{this.title}}</a></span>
+        ({{this.year}}) - {{this.genre}} - {{this.duration}} min
+      </div>
+    {{/each}}
+  </div>
+  <p class="stars">★★★★★</p>
+</div>

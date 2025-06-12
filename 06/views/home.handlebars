@@ -1,12 +1,26 @@
-<h1>Cadastre o seu livro:</h1>
-<form class="form" action="/books/insertbook" method="POST">
-    <div class="form-control">
-        <label for="title">Título:</label>
-        <input type="text" name="title" placeholder="Título do livro">
+<form class="form" action="/movies/insertmovie" method="POST">
+    <p class="stars">★★★★★</p>
+    <h1>Cadastre o seu filme:</h1>
+    <div class="form-group">
+        <input type="text" name="title" id="title" required placeholder=" " />
+        <label for="title">Título do filme</label>
     </div>
-    <div class="form-control">
-        <label for="pageqty">Número de páginas:</label>
-        <input type="number" name="pageqty" placeholder="Quantas páginas o livro tem?">
+    <div class="form-group">
+        <input type="text" name="director" id="director" required placeholder=" " />
+        <label for="director">Diretor</label>
     </div>
-    <input type="submit" value="Cadastrar">
+    <div class="form-group">
+        <input type="number" name="year" id="year" required placeholder=" " />
+        <label for="year">Ano de lançamento</label>
+    </div>
+    <div class="form-group">
+        <input type="text" name="genre" id="genre" required placeholder=" " />
+        <label for="genre">Gênero</label>
+    </div>
+    <div class="form-group">
+        <input type="number" name="duration" id="duration" required placeholder=" " />
+        <label for="duration">Duração (minutos)</label>
+    </div>
+    <input class="btn" type="submit" value="Cadastrar">
+    <p class="stars">★★★★★</p>
 </form>

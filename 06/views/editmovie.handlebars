@@ -1,0 +1,27 @@
+
+<form class="form" action="/movies/updatemovie" method="POST">
+<a href="/movies" class="btn-back">Voltar</a>
+  <h1>Edite o seu filme:</h1>
+  <input type="hidden" name="id" value="{{movie.id}}">
+  <div class="form-control">
+    <label for="title">Título:</label>
+    <input type="text" name="title" placeholder="Título do filme" value="{{movie.title}}">
+  </div>
+  <div class="form-control">
+    <label for="director">Diretor:</label>
+    <input type="text" name="director" placeholder="Diretor do filme" value="{{movie.director}}">
+  </div>
+  <div class="form-control">
+    <label for="year">Ano de lançamento:</label>
+    <input type="number" name="year" placeholder="Ano de lançamento" value="{{movie.year}}">
+  </div>
+  <div class="form-control">
+    <label for="genre">Gênero:</label>
+    <input type="text" name="genre" placeholder="Gênero do filme" value="{{movie.genre}}">
+  </div>
+  <div class="form-control">
+    <label for="duration">Duração (minutos):</label>
+    <input type="number" name="duration" placeholder="Duração em minutos" value="{{movie.duration}}">
+  </div>
+  <input type="submit" value="Editar">
+</form>
