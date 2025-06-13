@@ -117,7 +117,7 @@ app.post('/movies/updatemovie', function (req, res) {
     if (err) {
       console.log(err)
     }
-    res.redirect(`/movies/edit/${id}`)
+    res.redirect('/movies')
   })
 })
 
